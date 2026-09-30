@@ -65,4 +65,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>if not exist "$(AppData)\r2modmanPlus-local\RiskOfRain2\profiles\Dev\BepInEx\plugins\$(TargetName)" md "$(AppData)\r2modmanPlus-local\RiskOfRain2\profiles\Dev\BepInEx\plugins\$(TargetName)"
+copy /Y "$(TargetPath)" "$(AppData)\r2modmanPlus-local\RiskOfRain2\profiles\Dev\BepInEx\plugins\$(TargetName)"</PostBuildEvent>
+  </PropertyGroup>
 </Project>
