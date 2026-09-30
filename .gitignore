@@ -2,3 +2,10 @@
 
 !.gitignore
 !readme.md
+
+!Pass-1/
+!Pass-1/Properties/
+!Pass-1/Properties/**/*
+!Pass-1/Pass-1.cs
+!Pass-1/Pass-1.csproj
+!Pass-1/Pass-1.slnx
